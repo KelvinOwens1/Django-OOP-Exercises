@@ -26,9 +26,9 @@ def test_triangle():
     assert triangle.area == 20
 
 
-# def test_not_valid_area():
-#     triangle = Triangle(-2, 5)
+def test_not_valid_area():
+    triangle = Triangle(-2, 5)
 
-#     assert triangle.area == -5
-#     with pytest.raises(ValueError):
-#         triangle.valid_area()
+    assert triangle.area == -5
+    with pytest.raises(ValueError):
+        triangle.valid_area()
